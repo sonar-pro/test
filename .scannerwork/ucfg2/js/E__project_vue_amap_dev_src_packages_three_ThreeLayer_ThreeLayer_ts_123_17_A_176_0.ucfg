@@ -1,0 +1,925 @@
+
+RE__project_vue_amap_dev_src_packages_three_ThreeLayer_ThreeLayer_ts_123_17_A_176_0M
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.ts{ {("s11_1*é
+s11_1
+<synthetic> (64
+
+__unknown_file (
+%scope-A_176_0"ObjectR
+P
+
+__unknown_file (
+
+%env"
+%scope-A_176_0"__id*
+
+%scope-A_176_0M
+K
+
+__unknown_file (	
+%expr_0"__id**
+
+%env"
+_this_1_FE_427_0H
+F
+
+__unknown_file (	
+%expr_1"__id**
+	
+%expr_0"
+
+rendererJ
+H
+
+__unknown_file (	
+%expr_2"__id**
+	
+%expr_1"
+
+resetStateí"è
+M
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.ts} }("
+
+%methRes_0*
+	
+%expr_1"
+
+resetState2
+	
+%expr_12
+
+%envM
+K
+
+__unknown_file (	
+%expr_3"__id**
+
+%env"
+_this_1_FE_427_0L
+J
+
+__unknown_file (	
+%expr_4"__id**
+	
+%expr_3"
+customCoordsM
+K
+
+__unknown_file (	
+%expr_5"__id**
+
+%env"
+_this_1_FE_427_0I
+G
+
+__unknown_file (	
+%expr_6"__id**
+	
+%expr_4"
+	setCenter™"ß
+M
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.ts~ ~(%
+
+%methRes_1*
+	
+%expr_4"
+	setCenter2
+	
+%expr_42
+
+%env2*
+	
+%expr_5"
+centerM
+K
+
+__unknown_file (	
+%expr_7"__id**
+
+%env"
+_this_1_FE_427_0è
+å
+M
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.ts (
+
+%scope-A_176_0"
+camera"__id**
+	
+%expr_7"
+cameraS
+Q
+
+__unknown_file (
+%sc-FE_427_0_0"__id**
+
+%env"
+%scope-FE_427_0J
+H
+
+__unknown_file (	
+%expr_8"__id**
+
+%sc-FE_427_0_0"
+mapG
+E
+
+__unknown_file (	
+%expr_9"__id**
+	
+%expr_8"	
+getViewë"é
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÅ Å(
+
+%methRes_2*
+	
+%expr_8"	
+getView2
+	
+%expr_82
+
+%envÜ
+É
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÅ Å()
+%fieldAccess_0"__id**
+
+
+%methRes_2"
+typeã
+à
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÅ Å()
+%binOpRes_0"
+__js_equal*
+
+%fieldAccess_0*
+3D*
+s11_2
+s11_3*Ù
+s11_2
+<synthetic> (N
+L
+
+__unknown_file (
+
+%expr_10"__id**
+
+%env"
+_this_1_FE_427_0N
+L
+
+__unknown_file (
+
+%expr_11"__id**
+
+
+%expr_10"
+customCoordsQ
+O
+
+__unknown_file (
+
+%expr_12"__id*!*
+
+
+%expr_11"
+getCameraParamsõ"ò
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÇM Ç(\
+
+%methRes_3*
+
+
+%expr_11"
+getCameraParams2
+
+
+%expr_112
+
+%envÑ
+Å
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÇ Ç(
+%near~iSc_10"__id**
+
+
+%methRes_3"
+nearÅ
+
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÇ Ç(
+%far~iSc_10"__id**
+
+
+%methRes_3"
+farÅ
+
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÇ Ç(!
+%fov~iSc_10"__id**
+
+
+%methRes_3"
+fov
+}
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÇ# Ç(%
+
+%up~iSc_10"__id**
+
+
+%methRes_3"
+upà
+Ö
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÇ' Ç(-
+%lookAt~iSc_10"__id**
+
+
+%methRes_3"
+lookAtå
+â
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÇ/ Ç(7
+%position~iSc_10"__id**
+
+
+%methRes_3"
+
+positionN
+L
+
+__unknown_file (
+
+%expr_13"__id**
+
+%scope-A_176_0"
+cameraÅ
+
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÖ Ö(
+
+
+%expr_13"
+near"__id*
+
+%near~iSc_10N
+L
+
+__unknown_file (
+
+%expr_14"__id**
+
+%scope-A_176_0"
+camera
+}
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsÜ Ü(
+
+
+%expr_14"
+far"__id*
+
+%far~iSc_10N
+L
+
+__unknown_file (
+
+%expr_15"__id**
+
+%scope-A_176_0"
+camera
+}
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsá á(
+
+
+%expr_15"
+fov"__id*
+
+%fov~iSc_10N
+L
+
+__unknown_file (
+
+%expr_16"__id**
+
+%scope-A_176_0"
+cameraJ
+H
+
+__unknown_file (
+
+%expr_17"__id**
+
+
+%expr_16"
+
+positionE
+C
+
+__unknown_file (
+
+%expr_18"__id**
+
+
+%expr_17"
+set•"¢
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsà à(
+
+%methRes_4*
+
+
+%expr_17"
+set2
+
+
+%expr_172
+
+%env2
+
+%position~iSc_10N
+L
+
+__unknown_file (
+
+%expr_19"__id**
+
+%scope-A_176_0"
+cameraD
+B
+
+__unknown_file (
+
+%expr_20"__id**
+
+
+%expr_19"
+upE
+C
+
+__unknown_file (
+
+%expr_21"__id**
+
+
+%expr_20"
+setü"ú
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsâ â(
+
+%methRes_5*
+
+
+%expr_20"
+set2
+
+
+%expr_202
+
+%env2
+
+
+%up~iSc_10N
+L
+
+__unknown_file (
+
+%expr_22"__id**
+
+%scope-A_176_0"
+cameraH
+F
+
+__unknown_file (
+
+%expr_23"__id**
+
+
+%expr_22"
+lookAt¶"£
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsä ä(
+
+%methRes_6*
+
+
+%expr_22"
+lookAt2
+
+
+%expr_222
+
+%env2
+
+%lookAt~iSc_10N
+L
+
+__unknown_file (
+
+%expr_24"__id**
+
+%scope-A_176_0"
+cameraX
+V
+
+__unknown_file (
+
+%expr_25"__id*(*&
+
+
+%expr_24"
+updateProjectionMatrix¢"ü
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsã ã()
+
+%methRes_7*&
+
+
+%expr_24"
+updateProjectionMatrix2
+
+
+%expr_242
+
+%env*
+s11_4*ñ
+s11_3
+<synthetic> (N
+L
+
+__unknown_file (
+
+%expr_26"__id**
+
+%env"
+_this_1_FE_427_0N
+L
+
+__unknown_file (
+
+%expr_27"__id**
+
+
+%expr_26"
+customCoordsQ
+O
+
+__unknown_file (
+
+%expr_28"__id*!*
+
+
+%expr_27"
+getCameraParamsõ"ò
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsçK ç(Z
+
+%methRes_8*
+
+
+%expr_27"
+getCameraParams2
+
+
+%expr_272
+
+%envÅ
+
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsç ç(
+%top~iSc_11"__id**
+
+
+%methRes_8"
+topà
+Ö
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsç ç(
+%bottom~iSc_11"__id**
+
+
+%methRes_8"
+bottomÑ
+Å
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsç  ç($
+%left~iSc_11"__id**
+
+
+%methRes_8"
+leftÜ
+É
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsç& ç(+
+%right~iSc_11"__id**
+
+
+%methRes_8"
+rightå
+â
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsç- ç(5
+%position~iSc_11"__id**
+
+
+%methRes_8"
+
+positionN
+L
+
+__unknown_file (
+
+%expr_29"__id**
+
+%scope-A_176_0"
+camera
+}
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsè è(
+
+
+%expr_29"
+top"__id*
+
+%top~iSc_11N
+L
+
+__unknown_file (
+
+%expr_30"__id**
+
+%scope-A_176_0"
+cameraÜ
+É
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsê ê(
+
+
+%expr_30"
+bottom"__id*
+
+%bottom~iSc_11N
+L
+
+__unknown_file (
+
+%expr_31"__id**
+
+%scope-A_176_0"
+cameraÅ
+
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsë ë(
+
+
+%expr_31"
+left"__id*
+
+%left~iSc_11N
+L
+
+__unknown_file (
+
+%expr_32"__id**
+
+%scope-A_176_0"
+cameraÑ
+Å
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsí í(
+
+
+%expr_32"
+right"__id*
+
+%right~iSc_11N
+L
+
+__unknown_file (
+
+%expr_33"__id**
+
+%scope-A_176_0"
+cameraJ
+H
+
+__unknown_file (
+
+%expr_34"__id**
+
+
+%expr_33"
+
+positionE
+C
+
+__unknown_file (
+
+%expr_35"__id**
+
+
+%expr_34"
+set•"¢
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsì ì(
+
+%methRes_9*
+
+
+%expr_34"
+set2
+
+
+%expr_342
+
+%env2
+
+%position~iSc_11N
+L
+
+__unknown_file (
+
+%expr_36"__id**
+
+%scope-A_176_0"
+cameraX
+V
+
+__unknown_file (
+
+%expr_37"__id*(*&
+
+
+%expr_36"
+updateProjectionMatrix£"†
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsî î()
+%methRes_10*&
+
+
+%expr_36"
+updateProjectionMatrix2
+
+
+%expr_362
+
+%env*
+s11_4*˛
+s11_4
+<synthetic> (N
+L
+
+__unknown_file (
+
+%expr_38"__id**
+
+%env"
+_this_1_FE_427_0í
+è
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsñ
+ ñ(
+
+
+%expr_38"
+camera"__id**
+
+%scope-A_176_0"
+cameraN
+L
+
+__unknown_file (
+
+%expr_39"__id**
+
+%env"
+_this_1_FE_427_0á
+Ñ
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsó ó(
+%fieldAccess_1"__id**
+
+
+%expr_39"	
+passNumé
+ã
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsó ó(
+%binOpRes_1"__js_greater_than*
+
+%fieldAccess_1*2 *
+s11_5
+s11_6*˝	
+s11_5
+<synthetic> (N
+L
+
+__unknown_file (
+
+%expr_40"__id**
+
+%env"
+_this_1_FE_427_0J
+H
+
+__unknown_file (
+
+%expr_41"__id**
+
+
+%expr_40"
+
+passListï
+í
+
+__unknown_file (	
+%func_0"__declareFunction*XV
+TE__project_vue_amap_dev_src_packages_three_ThreeLayer_ThreeLayer_ts_152_36_A_177_pasR
+P
+
+__unknown_file (
+
+%env"
+%scope-A_176_0"__id*
+
+%scope-A_176_0fd
+
+__unknown_file (/
+%functionPrototype_0%SonarFunctionPrototype"%SonarFunctionPrototypes
+q
+
+__unknown_file (	
+%void_0"
+__setProto*
+	
+%func_0*1
+/
+%functionPrototype_0%SonarFunctionPrototypeI
+G
+
+__unknown_file (
+
+%expr_42"__id**
+
+
+%expr_41"	
+forEach°"û
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsò ò(!
+%methRes_11*
+
+
+%expr_41"	
+forEach2
+
+
+%expr_412
+
+%env2
+	
+%func_0N
+L
+
+__unknown_file (
+
+%expr_43"__id**
+
+%env"
+_this_1_FE_427_0P
+N
+
+__unknown_file (
+
+%expr_44"__id* *
+
+
+%expr_43"
+effectComposerH
+F
+
+__unknown_file (
+
+%expr_45"__id**
+
+
+%expr_44"
+renderì"ê
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsù  ù(&
+%methRes_12*
+
+
+%expr_44"
+render2
+
+
+%expr_442
+
+%env*
+s11_7*¨
+s11_6
+<synthetic> (N
+L
+
+__unknown_file (
+
+%expr_46"__id**
+
+%env"
+_this_1_FE_427_0J
+H
+
+__unknown_file (
+
+%expr_47"__id**
+
+
+%expr_46"
+
+rendererN
+L
+
+__unknown_file (
+
+%expr_48"__id**
+
+%env"
+_this_1_FE_427_0H
+F
+
+__unknown_file (
+
+%expr_49"__id**
+
+
+%expr_47"
+renderÃ"…
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.tsü ü( 
+%methRes_13*
+
+
+%expr_47"
+render2
+
+
+%expr_472
+
+%env2*
+
+
+%expr_48"
+scene2*
+
+%scope-A_176_0"
+camera*
+s11_7*¬
+s11_7
+<synthetic> (N
+L
+
+__unknown_file (
+
+%expr_50"__id**
+
+%env"
+_this_1_FE_427_0J
+H
+
+__unknown_file (
+
+%expr_51"__id**
+
+
+%expr_50"
+
+rendererL
+J
+
+__unknown_file (
+
+%expr_52"__id**
+
+
+%expr_51"
+
+resetStateó"î
+O
+CE:/project/vue-amap-dev/src/packages/three/ThreeLayer/ThreeLayer.ts° °("
+%methRes_14*
+
+
+%expr_51"
+
+resetState2
+
+
+%expr_512
+
+%env"
+
+__unknown_file ( :
+%envB 
