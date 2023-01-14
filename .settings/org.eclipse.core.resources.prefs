@@ -1,0 +1,15 @@
+#Wed Dec 21 10:32:19 CST 2011
+eclipse.preferences.version=1
+encoding//WebRoot/manage/index.html=UTF-8
+encoding//WebRoot/scripts/json/json0.js=UTF-8
+encoding//src/com/cib/action/PageAction.java=UTF-8
+encoding//src/com/cib/action/ShowAction.java=UTF-8
+encoding//src/com/cib/action/TestAction.java=UTF-8
+encoding//src/com/cib/entity/Page.java=UTF-8
+encoding//src/com/cib/entity/Page_bak.java=UTF-8
+encoding//src/com/cib/entity/User.java=UTF-8
+encoding//src/com/cib/util/mail/SpringMail.java=UTF-8
+encoding//src/com/cib/util/mail/SpringMail_Batch_Attach_HTML.java=UTF-8
+encoding//src/mail=UTF-8
+encoding//src/mail/notify-mail.ftl=UTF-8
+encoding//src/mail/registerUser.ftl=UTF-8

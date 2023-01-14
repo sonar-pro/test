@@ -1,0 +1,21 @@
+/* CSS Document */
+
+*{ margin:0; padding:0; list-style:none}
+body{ font-size:12px}
+
+a.pager:link{
+	color:blue;
+	text-decoration:none;
+}
+a.pager:visited{
+	color:blue;
+	text-decoration:none;
+}
+a.pager:hover{
+    color:green;
+    text-decoration:none;
+}
+a.pager:active{
+	color:gray;
+	text-decoration:none;
+}

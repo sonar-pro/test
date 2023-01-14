@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+<!-- 数据源配置开始 -->
+	<!--bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.microsoft.jdbc.sqlserver.SQLServerDriver">
+		</property>
+		<property name="url"
+			value="jdbc:microsoft:sqlserver://123.138.22.72:1433;DatabaseName=boruiweb">
+		</property>
+		<property name="username" value="sa"></property>
+		<property name="password" value="sasazyX"></property>
+	</bean-->
+	
+	<bean id="dataSource"  class="org.springframework.jdbc.datasource.DriverManagerDataSource">  
+      <property name="driverClassName" value="com.microsoft.jdbc.sqlserver.SQLServerDriver"></property>  
+      <property name="url" value="jdbc:microsoft:sqlserver://123.138.22.72:1433;DatabaseName=boruiweb"></property>  
+      <property name="username" value="sa"></property>  
+      <property name="password" value="sasazyX"></property>  
+    </bean>  
+	
+<!-- 数据源配置结束 -->
+
+<!-- hibernate配置开始 -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource"></ref>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.Oracle9Dialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/cib/model/TmpMsg.hbm.xml</value>
+				<value>com/cib/model/PrintInstitution.hbm.xml</value>
+				<value>com/cib/model/DepartmentMg.hbm.xml</value>
+				<value>com/cib/model/WithdrawManager.hbm.xml</value>
+				<value>com/cib/model/ActionRule2.hbm.xml</value>
+				<value>com/cib/model/ActionRule.hbm.xml</value>
+				<value>com/cib/model/LocationDic.hbm.xml</value>
+				<value>com/cib/model/CardTypeDic.hbm.xml</value>
+				<value>com/cib/model/PrintRule.hbm.xml</value>
+				<value>com/cib/model/JobMg.hbm.xml</value>
+				<value>com/cib/model/JobPrinting.hbm.xml</value>
+				<value>com/cib/model/UserMg.hbm.xml</value>
+				<value>com/cib/model/RoleMg.hbm.xml</value>
+				<value>com/cib/model/RightMg.hbm.xml</value>
+			</list>
+		</property>
+	</bean >
+<!-- hibernate配置结束 -->
+<!-- Spring邮件发送配置开始 -->	
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.163.com"></property>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.timeout">25000</prop>
+			</props>
+		</property>
+		<property name="username" value="zxfxfu" />
+		<property name="password" value="8887725630" />
+	</bean>
+
+	<bean id="freeMarker"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="/WEB-INF/template/" /><!--指定模板文件目录-->
+		<property name="freemarkerSettings"><!-- 设置FreeMarker环境属性-->
+			<props>
+				<prop key="template_update_delay">1800</prop><!--刷新模板的周期，单位为秒-->
+				<prop key="default_encoding">UTF-8</prop><!--模板的编码格式 -->
+				<prop key="locale">zh_CN</prop><!-- 本地化设置-->
+			</props>
+		</property>
+	</bean>
+<!-- Spring邮件发送配置结束 -->	
+<!-- 用户CommonOperation配置开始 -->	
+		<bean id="commonOperationDAO" class="com.cib.dao.hibernate.CommonOperationDAO" >
+			<property name="dataSource">
+				<ref bean="dataSource" />
+			</property>
+		</bean>
+		<bean id="commonOperationManager" class="com.cib.service.impl.CommonOperationManager">
+			<property name="commonOperationDAO">
+				<ref bean="commonOperationDAO" />
+			</property>
+		</bean>
+		<!--bean id="userAction" class="com.cib.action.UserAction">
+			<property name="commonOperationManager">
+				<ref bean="commonOperationManager" />
+			</property>
+		</bean-->
+<!-- 用户CommonOperation配置结束 -->	
+<!-- 用户ACTION配置开始 -->	
+		<bean id="userDAO" class="com.cib.dao.hibernate.UserDAO" >
+			<property name="dataSource">
+				<ref bean="dataSource" />
+			</property>
+		</bean>
+		<bean id="userManager" class="com.cib.service.impl.UserManager">
+			<property name="userDAO">
+				<ref bean="userDAO" />
+			</property>
+		</bean>
+		<bean id="userAction" class="com.cib.action.UserAction">
+			<property name="userManager">
+				<ref bean="userManager" />
+			</property>
+			<property name="commonOperationManager">
+				<ref bean="commonOperationManager" />
+			</property>
+		</bean>
+<!-- 用户ACTION配置结束 -->			
+		<bean id="pageDAO" class="com.cib.dao.hibernate.PageDAO" >
+			<property name="dataSource">
+				<ref bean="dataSource" />
+			</property>
+		</bean>
+		<bean id="pageService" class="com.cib.service.impl.PageService">
+			<property name="pageDAO">
+				<ref bean="pageDAO" />
+			</property>
+		</bean>
+		<bean id="pageAction" class="com.cib.action.PageAction">
+		<property name="pageService">
+			<ref bean="pageService" />
+		</property>
+		</bean>
+
+		<bean id="testDao" class="com.cib.dao.hibernate.TestDAO" >
+			<property name="dataSource">
+				<ref bean="dataSource" />
+			</property>
+		</bean>
+		<bean id="testService" class="com.cib.service.impl.TestService">
+			<property name="testDao">
+				<ref bean="testDao" />
+			</property>
+		</bean>
+		<bean id="testAction" class="com.cib.action.TestAction">
+		<property name="testService">
+			<ref bean="testService" />
+		</property>
+		</bean>
+<!-- 分页配置开始 -->
+		<bean id = "examineeDAO" class = "com.cib.dao.hibernate.ExamineeDAO">
+			<property name="dataSource" ref="dataSource" />
+			<!--property name="sessionFactory" ref="sessionFactory" /-->
+		</bean>
+		<bean id = "examineeService" class = "com.cib.service.impl.ExamineeService">
+			<property name="examineeDAO" ref="examineeDAO" />
+		</bean>
+		<bean id = "showAction" class = "com.cib.action.ShowAction">
+			<property name="examineeService" ref="examineeService" />
+		</bean>
+<!-- 分页配置结束 -->
+<!-- 模板管理配置开始 -->
+		<bean id = "loginDAO" class = "com.cib.dao.hibernate.LoginDAO">
+			<property name="dataSource" ref="dataSource" />
+			<!--property name="sessionFactory" ref="sessionFactory" /-->
+		</bean>
+		<bean id = "loginManager" class = "com.cib.service.impl.LoginManager">
+			<property name="loginDAO" ref="loginDAO" />
+		</bean>
+		<bean id = "loginAction" class = "com.cib.action.LoginAction">
+			<property name="loginManager" ref="loginManager" />
+		</bean>
+<!-- 模板管理配置结束 -->
+
+	
+<!-- 模板管理DAO,service,action配置开始 -->
+		<bean id = "tmpmgDAO" class = "com.cib.dao.hibernate.TmpMgDAO">
+			<property name="sessionFactory" ref="sessionFactory" />
+		</bean>
+		<bean id = "tmpmgManager" class = "com.cib.service.impl.TmpmgManager">
+			<property name="tmpMgDAO" ref="tmpmgDAO" />
+		</bean>
+		<bean id = "tmpmgAction" class = "com.cib.action.TmpMgAction">
+			<property name="tmpmgManager" ref="tmpmgManager" />
+		</bean>
+<!-- 模板管理DAO,service,action配置结束 -->
+
+<!-- 部门管理DAO,service,action配置开始 -->
+		<bean id="deptDAO" class = "com.cib.dao.hibernate.DepartmentDAO">
+			<property name="sessionFactory" ref="sessionFactory" />
+		</bean>
+		<bean id = "deptManager" class = "com.cib.service.impl.DepartmentManager">
+			<property name="deptDAO" ref="deptDAO" />
+		</bean>
+		<bean id = "deptAction" class = "com.cib.action.DeptAction">
+			<property name="deptManager" ref="deptManager" />
+		</bean>
+<!-- 部门管理DAO,service,action配置结束 -->
+
+<!-- 打印服务商管理DAO,service,action配置开始 -->
+		<bean id = "printInstDAO" class = "com.cib.dao.hibernate.PrintInstDAO">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<bean id="printInstManager" class = "com.cib.service.impl.PrintInstManager">
+			<property name="printInstDAO" ref="printInstDAO"></property>
+		</bean>
+		<bean id="printInstAction" class = "com.cib.action.PrintInstAction">
+			<property name="printInstManager" ref="printInstManager"></property>
+		</bean>
+<!-- 打印服务商管理DAO,service,action配置结束 -->
+
+<!-- 退信管理DAO,service,action配置开始 -->
+		<bean id = "withdrawDAO" class = "com.cib.dao.hibernate.WithDrawDAO">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<bean id = "withdrawManage" class = "com.cib.service.impl.WithdrawManage">
+			<property name="withdrawDAO" ref="withdrawDAO"></property>
+		</bean>
+		<bean id = "withdrawAction" class = "com.cib.action.WithdrawAction">
+			<property name="withdrawManage" ref="withdrawManage"></property>
+		</bean>
+<!-- 退信管理DAO,service,action配置结束 -->
+
+<!-- 个性化插页管理DAO,service,action配置开始 -->
+		<bean id = "actionRuleDAO" class = "com.cib.dao.hibernate.ActionRuleDAO">
+			<property name="sessionFactory" ref="sessionFactory" />
+		</bean>
+		<bean id = "actionManager" class = "com.cib.service.impl.ActionRuleManager">
+			<property name="actionRuleDAO" ref="actionRuleDAO" />
+		</bean>
+		<bean id = "actionRuleAction" class = "com.cib.action.ActionRuleAction">
+			<property name="actionManager" ref="actionManager" />
+		</bean>
+<!-- 个性化插页管理DAO,service,action配置结束 -->
+
+<!-- 地区插页管理DAO,service,action配置开始 -->
+		<bean id = "actionRule2DAO" class = "com.cib.dao.hibernate.ActionRule2DAO">
+			<property name="sessionFactory" ref="sessionFactory" />
+		</bean>
+		<bean id = "actionRule2Manager" class = "com.cib.service.impl.ActionRule2Manager">
+			<property name = "actionRule2DAO" ref="actionRule2DAO"></property>
+		</bean>
+		<bean id="actionRule2Action" class="com.cib.action.ActionRule2Action">
+			<property name="actionRule2Manager" ref="actionRule2Manager"></property>
+		</bean>
+<!-- 地区插页管理DAO,service,action配置结束 -->
+
+<!-- 打印规则管理DAO,service,action配置开始 -->
+	<bean id = "printRuleDAO" class = "com.cib.dao.hibernate.PrintRuleDAO">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id = "printRuleManager" class = "com.cib.service.impl.PrintRuleManager">
+		<property name="printRuleDAO" ref="printRuleDAO"></property>
+	</bean>
+	<bean id = "printRuleAction" class = "com.cib.action.PrintRuleAction">
+		<property name = "printRuleManager" ref="printRuleManager"></property>
+	</bean>
+<!-- 打印规则管理DAO,service,action配置结束 -->
+
+<!-- 作业管理DAO,service,action配置开始 -->
+	<bean id="jobMgDAO" class = "com.cib.dao.hibernate.JobMgDAO">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="jobMgManager" class = "com.cib.service.impl.JobMgManager">
+		<property name="jobMgDAO" ref="jobMgDAO"></property>
+	</bean>
+	<bean id="jobMgAction" class = "com.cib.action.JobMgAction">
+		<property name="jobMgManager" ref="jobMgManager"></property>
+	</bean>
+<!-- 作业规则管理DAO,service,action配置结束 -->
+
+
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+      	<property name="sessionFactory" ref="sessionFactory"/>
+ 	</bean>
+  	    
+  	<!-- 事务管理器 -->  
+	 <bean id="transManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">  
+	 	<property name="dataSource" ref="dataSource"></property>  
+	 </bean>  
+	 <!-- 事务拦截器 -->  
+	 <bean id="trInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor">  
+	  	<property name="transactionManager" ref="transManager"></property>  
+	  	<property name="transactionAttributes">  
+		   	<props>  
+		   		<prop key="*">PROPAGATION_REQUIRED</prop>
+		   		<prop key="find*">PROPAGATION_REQUIRED</prop>
+			    <prop key="delete*">PROPAGATION_REQUIRED</prop>
+			    <prop key="save*">PROPAGATION_REQUIRED</prop>
+			    <prop key="merge*">PROPAGATION_REQUIRED</prop>
+			    <prop key="attach*">PROPAGATION_REQUIRED</prop>
+		   	</props>  
+	 	</property>  
+	 </bean>  
+	 <!-- 自动代理 -->  
+	 <bean id="autoProxy" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">  
+	     <property name="beanNames">  
+	     	<list>  
+	       		<value>*DAO</value>
+	       		<value>find*</value>
+			    <value>delete*</value>
+			    <value>save*</value>
+			    <value>merge*</value>
+			    <value>attach*</value>
+	      	</list>  
+	     </property>  
+	     <property name="interceptorNames">  
+	         <list>  
+	            <value>trInterceptor</value>  
+	         </list>  
+	     </property>
+	     <property name="proxyTargetClass" value="true"/>
+	 </bean>       
+  	    
+</beans>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+<!--constant name="struts.action.extension" value=",,action" /-->
+<!--include file="struts-default.xml"/-->   
+<!--不受权限控制的Action请求配置-->   
+<package name="non-authority" extends="struts-default" >
+    <!--定义登录-->
+    <action name="login" class="com.cib.action.LoginAction"> 	  
+        <result name="input">/manage/login.jsp</result>   
+        <result name="error">/manage/error.jsp</result>   
+        <result name="success">/manage/index.jsp</result>
+    </action>        
+    <action name="query" class="com.cib.action.LoginAction" method="query">   
+        <result name="success">/manage/query.jsp</result>   
+    </action>
+    <action name="user" class="com.cib.action.UserAction" method="add">   
+        <result name="success">/manage/query.jsp</result>   
+    </action>
+    <action name="testdemo" class="com.cib.action.TestAction">
+		<result name="success">/manage/index.jsp</result>
+		<result name="input">/manage/index.jsp</result>
+	</action>
+	<action name="flexGrid" class="com.cib.action.FlexiGridAction" method="flexGrid">   
+        <!--result name="success">/add.jsp</result-->
+    </action>
+</package>
+<!--受权限控制的Action请求配置-->   
+<package name="authority" extends="struts-default">   
+    <interceptors>   
+        <!--定义一个名为authority的拦截器-->   
+		<interceptor name="authority" class="com.cib.util.AuthorityInterceptor"/>   
+   		<!--定义一个包含权限检查的拦截器栈-->   
+		<interceptor-stack name="mydefault">
+			<!--配置自定义的拦截器-->   
+        	<interceptor-ref name="authority"/>
+    		<!--配置内建默认拦截器-->   
+			<interceptor-ref name="defaultStack"/>
+    	</interceptor-stack>   
+	</interceptors>   
+   
+	<default-interceptor-ref name="mydefault" />   
+	<!--定义全局Result-->   
+    <global-results>   
+        <result name="login">/manage/login.jsp</result>   
+    </global-results>
+   	<action name="show" class="com.cib.action.LoginAction" method="show">   
+        <result name="success">/manage/show.jsp</result>  
+    </action>
+    <action name="add" class="com.cib.action.LoginAction" method="add">   
+        <result name="success">/manage/add.jsp</result>
+    </action>   
+    
+</package>
+
+<package name="front" namespace="/u" extends="struts-default">
+  <default-action-ref name="index"></default-action-ref>
+  <action name="index" class="com.cib.action.DefaultAction" method="index">
+  <result>/manage/query.jsp</result>
+  </action>
+</package>
+<!--package name="login" extends="struts-default">
+<action name="login" class="com.cib.action.LoginAction" method="query">
+	<result name = "success">login.jsp</result>
+</action>
+</package-->   
+<!--package name="admin" namespace="/admin" extends="struts-default"-->    
+<package name="admin" extends="struts-default">
+		<action name="*_user" method="{1}"  class="com.cib.action.PageAction">
+      		<result name="success">/manage/page.jsp</result>
+      		<result name="page">/manage/pagination.jsp</result>
+    	</action>
+		  
+      	<!--  第一页的处理 -->  
+        <action name="Showfirst" class="com.cib.action.ShowAction" method="first">  
+            <result name="success">/Student_list.jsp</result>  
+              
+        </action>  
+        <!--上一页的处理  -->  
+        <action name="Showpre" class="com.cib.action.ShowAction" method="pre">  
+            <result name="success">/Student_list.jsp</result>  
+              
+        </action>      
+        <!--下一页的处理  -->  
+        <action name="Shownext" class="com.cib.action.ShowAction" method="next">  
+            <result name="success">/Student_list.jsp</result>  
+              
+        </action>      
+        <!--对最后一页的处理  -->  
+        <action name="Showlast" class="com.cib.action.ShowAction" method="last">  
+            <result name="success">/Student_list.jsp</result>  
+              
+        </action>  
+</package>
+<!-- 改变struts2默认为2M的上传文件大小限制 -->  
+<constant name="struts.multipart.maxSize" value="1024000000"/>  
+<package name="upload" extends="struts-default">  
+        <action name="uploadFile" class="com.cib.action.UploadFileAction">  
+            <param name="savePath">/manage/upload</param>  
+            <result name="success">/manage/index.jsp</result>  
+        </action>  
+        <action name="downloadFile" class="com.cib.action.DownloadFileAction">  
+            <param name="savePath">/manage/upload</param>  
+            <result name="success">/manage/index.jsp</result>  
+        </action>  
+</package>
+<package name="Setparam" extends="struts-default">
+		<action name="saveParam" class="com.cib.action.SetParamAction" method="writeProperties">
+		</action>
+</package>
+	
+<package name="TmpMg" extends="struts-default">
+		<action name="saveTmpMg" class="com.cib.action.TmpMgAction" method="save">
+			<result name="success" type="redirect">tmpmgList.action</result>
+		</action>
+		
+		<action name="tmpmgList" class="com.cib.action.TmpMgAction" method="getAll">
+			<result>/manage/pages/template/tempetManage.jsp</result>
+		</action>
+		
+		<action name="deleteTmpMg" class="com.cib.action.TmpMgAction" method="delete">
+			<result name="success" type="redirect">tmpmgList.action</result>
+		</action>
+		
+		<action name="updateTmpMg" class="com.cib.action.TmpMgAction" method="update">
+			<result name="success">/manage/pages/template/updateTemplet.jsp</result>
+		</action>
+		
+		<action name="tmpmgUpdate" class="com.cib.action.TmpMgAction" method="saveOrUpdate">
+			<result name="success" type="redirect">tmpmgList.action</result>
+		</action>
+</package>
+
+<package name="DepartmentMg" extends="struts-default">
+		<action name="saveDept" class="com.cib.action.DeptAction" method="save">
+			<result name="success" type="redirect">deptList.action</result>
+		</action>
+		
+		<action name="deptList" class="com.cib.action.DeptAction" method="getAll">
+			<result>/manage/pages/system/userManage.jsp</result>
+		</action>
+		
+		<action name="deleteDept" class="com.cib.action.DeptAction" method="delete">
+			<result name="success" type="redirect">deptList.action</result>
+		</action>
+		
+		<action name="updateDept" class="com.cib.action.DeptAction" method="update">
+			<result name="success">/manage/pages/system/updateDept.jsp</result>
+		</action>
+		
+		<action name="deptUpdate" class="com.cib.action.DeptAction" method="saveOrUpdate">
+			<result name="success" type="redirect">deptList.action</result>
+		</action>
+</package>
+	
+<package name="PrintInstitution" extends="struts-default">
+		<action name="savePintInst" class="com.cib.action.PrintInstAction" method="save">
+			<result name="success" type="redirect">pintInstList.action</result>
+		</action>
+		
+		<action name="pintInstList" class="com.cib.action.PrintInstAction" method="getAll">
+			<result>/manage/pages/system/serviceList.jsp</result>
+		</action>
+		
+		<action name="deletePrint" class="com.cib.action.PrintInstAction" method="delete">
+			<result name="success" type="redirect">pintInstList.action</result>
+		</action>
+		
+		<action name="updatePrint" class="com.cib.action.PrintInstAction" method="update">
+			<result name="success">/manage/pages/system/updateService.jsp</result>
+		</action>
+		
+		<action name="pintInstUpdate" class="com.cib.action.PrintInstAction" method="saveOrUpdate">
+			<result name="success" type="redirect">pintInstList.action</result>
+		</action>
+</package>
+	
+<package name="withdrawManager" extends="struts-default">
+		<action name="saveWithdraw" class="com.cib.action.WithdrawAction" method="save">
+			<result name = "success">success.jsp</result>
+		</action>
+		<action name="findById" class="com.cib.action.WithdrawAction" method="findById">
+			<result name = "success">withdrawQuery.jsp</result>
+		</action>
+		<action name="findByDate" class="com.cib.action.WithdrawAction" method="findByDate">
+			<result name = "success">withdrawQuery.jsp</result>
+		</action>
+</package>
+
+<package name="actionRule" extends="struts-default">
+	<action name="saveActionRule" class="com.cib.action.ActionRuleAction" method="save">
+		<result name = "success" type="redirect">getAllActionRule.action</result>
+	</action>
+	<action name="deleteActionRule" class="com.cib.action.ActionRuleAction" method="delete">
+		<result name = "success" type="redirect">getAllActionRule.action</result>
+	</action>
+	<action name="updateActionRule" class="com.cib.action.ActionRuleAction" method="saveOrUpdate">
+		<result name = "success" type="redirect">getAllActionRule.action</result>
+	</action>
+	<action name="getAllActionRule" class="com.cib.action.ActionRuleAction" method="getAll">
+		<result>/manage/pages/individuation/indivduationQuery.jsp</result>
+	</action>
+	<action name="getAllBank" class="com.cib.action.ActionRuleAction" method="getAllBank">
+		<result name = "success">/manage/pages/individuation/indivduationSetting.jsp</result>
+	</action>
+	<action name="queryCity" class="com.cib.action.ActionRuleAction" method="getAllCity">
+		<result name = "success">/manage/pages/individuation/city.jsp</result>
+	</action>
+	<action name="getAllPro" class="com.cib.action.ActionRuleAction" method="getAllPro">
+		<result name = "success">product.jsp</result>
+	</action>
+	<action name="getAllCard" class="com.cib.action.ActionRuleAction" method="getAllCard">
+		<result name = "success">/manage/pages/individuation/card.jsp</result>
+	</action>
+</package>
+	
+<package name="actionRule2" extends="struts-default">
+	<action name="saveAction2Rule" class="com.cib.action.ActionRule2Action" method="save">
+		<result name = "success">/manage/pages/individuation/success.jsp</result>
+	</action>
+</package>
+
+
+<package name="PrintRule" extends="struts-default">
+		<action name="savePrintRule" class="com.cib.action.PrintRuleAction" method="save">
+			<result name="success" type="redirect">printRuleList.action</result>
+		</action>
+		
+		<action name="printRuleList" class="com.cib.action.PrintRuleAction" method="getAll">
+			<result>/manage/pages/print/printRuleSetting.jsp</result>
+		</action>
+		
+		<action name="deletePrintRule" class="com.cib.action.PrintRuleAction" method="delete">
+			<result name="success" type="redirect">printRuleList.action</result>
+		</action>
+		
+		<action name="updatePrintRule" class="com.cib.action.PrintRuleAction" method="update">
+			<result name="success">/manage/pages/print/updatePrintRule.jsp</result>
+		</action>
+		
+		<action name="printRuleUpdate" class="com.cib.action.PrintRuleAction" method="saveOrUpdate">
+			<result name="success" type="redirect">printRuleList.action</result>
+		</action>
+		<action name="getAllTempletId" class="com.cib.action.PrintRuleAction" method="getAllTempletId">
+			<result name="success">/manage/pages/print/addPrintRule.jsp</result>
+		</action>
+		<action name="getAllTempletName" class="com.cib.action.PrintRuleAction" method="getAllTempletName">
+			<result name="success">/manage/pages/print/addPrintRule.jsp</result>
+		</action>
+		<action name="getAllActiveName" class="com.cib.action.PrintRuleAction" method="getAllActiveName">
+			<result name="success">/manage/pages/print/addPrintRule.jsp</result>
+		</action>
+		<action name="getAllProductId" class="com.cib.action.PrintRuleAction" method="getAllProductId">
+			<result name="success">/manage/pages/print/product.jsp</result>
+		</action>
+</package>
+
+<package name="JobMg" extends="struts-default">
+
+		<action name="jobMgList" class="com.cib.action.JobMgAction" method="getAll">
+			<result>/manage/pages/storage/billDataLoad.jsp</result>
+		</action>
+		
+		<action name="ReadEXE" class="com.cib.action.JobMgAction" method="ReadEXE">
+			
+		</action>
+		
+		
+		
+		
+		
+		
+		<action name="saveJobMg" class="com.cib.action.JobMgAction" method="save">
+			<result name="success" type="redirect">jobMgList.action</result>
+		</action>
+		
+		<action name="deleteJobMg" class="com.cib.action.JobMgAction" method="delete">
+			<result name="success" type="redirect">jobMgList.action</result>
+		</action>
+		
+		<action name="updateJobMg" class="com.cib.action.JobMgAction" method="update">
+			<result name="success">pages/template/updateTemplet.jsp</result>
+		</action>
+		
+		<action name="jobMgUpdate" class="com.cib.action.JobMgAction" method="saveOrUpdate">
+			<result name="success" type="redirect">jobMgList.action</result>
+		</action>
+</package>
+
+
+</struts>
+

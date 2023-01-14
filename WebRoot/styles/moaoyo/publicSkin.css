@@ -1,0 +1,853 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body, pre, textarea, input, .tab a.borderOn, .tab a.mainBorderOn {
+	color:#333;
+	background-color:#FFF;
+}
+a {
+	color:#333;
+}
+.borderOff {
+	border:0;
+}
+.borderOn {
+	border:1px solid #BFBFBF;
+}
+.tBorderOn {
+	border:1px solid #BFBFBF;
+	border-width:1px 0 0;
+}
+.rBorderOn {
+	border:1px solid #BFBFBF;
+	border-width:0 1px 0 0;
+}
+.bBorderOn {
+	border:1px solid #BFBFBF;
+	border-width:0 0 1px;
+}
+.lBorderOn {
+	border:1px solid #BFBFBF;
+	border-width:0 0 0 1px;
+}
+.tbBorderOn {
+	border:1px solid #BFBFBF;
+	border-width:1px 0;
+}
+.lrBorderOn {
+	border:1px solid #BFBFBF;
+	border-width:0 1px;
+}
+.lesserBorderOn {
+	border:1px solid #CCC;
+}
+.mainBorderOn {
+	border:1px solid #F09;
+}
+.lMainBorderOn {
+	border:1px solid #FCC;
+}
+.dashedOn {
+	border:1px dashed #BFBFBF;
+}
+.tDashedOn {
+	border:1px dashed #BFBFBF;
+	border-width:1px 0 0;
+}
+.rDashedOn {
+	border:1px dashed #BFBFBF;
+	border-width:0 1px 0 0;
+}
+.bDashedOn {
+	border:1px dashed #BFBFBF;
+	border-width:0 0 1px;
+}
+.lDashedOn {
+	border:1px dashed #BFBFBF;
+	border-width:0 0 0 1px;
+}
+.tbDashedOn {
+	border:1px dashed #BFBFBF;
+	border-width:1px 0;
+}
+.lrDashedOn {
+	border:1px dashed #BFBFBF;
+	border-width:0 1px;
+}
+.mainDashedOn {
+	border:1px dashed #F09;
+}
+/*.borderOn1 {
+	border:1px solid #CCC;
+}*/
+.borderOn2 {
+	border:1px solid #DDD;
+}
+hr {
+    border-bottom:1px dashed #BFBFBF;
+}
+hr.borderOn {
+    border-bottom:1px solid #BFBFBF;
+	border-width:0 0 1px;
+}
+.important {
+	background-color:#FF0;
+}
+.corDef{
+	cursor:default;
+}
+.backColor {
+	background-color:#FFF;
+}
+.backColor1 {
+	background-color:#000;
+}
+.gBackColor {
+	background-color:#EEE;
+}
+.yBackColor {
+	background-color:#FFE;
+}
+.pBackColor_1 {
+	background-color:#FF0;
+}
+.pBackColor_2 {
+	background-color:#FFF5EE;
+}
+
+/*A链接开始*/
+a.mainWhite:link,
+a.mainWhite:visited {
+    color:#F09;
+}
+a.baseWhite,
+a.baseWhite:visited {
+    color:#333;
+}
+a.lesserWhite:link,
+a.lesserWhite:visited {
+    color:#666;
+}
+a.thirdWhite:link,
+a.thirdWhite:visited {
+    color:#999;
+}
+a.fourthWhite:link,
+a.fourthWhite:visited {
+    color:#0CF;
+}
+a.borderWhite:link,
+a.borderWhite:visited {
+    color:#BFBFBF;
+}
+a.borderLesser:link,
+a.borderLesser:visited {
+	color:#BFBFBF;
+}
+.bbs table .title a.under:link,
+.bbs table .title a.under:visited {
+	color:#666;
+}	
+.bbs table .color .title a.under:link,
+.bbs table .color .title a.under:visited {
+	color:#F09;
+}	
+a.mainWhite:hover,
+a.mainWhite:active,
+a.baseWhite:hover,
+a.baseWhite:active,
+a.lesserWhite:hover,
+a.lesserWhite:active,
+a.thirdWhite:hover,
+a.thirdWhite:active,
+a.fourthWhite:hover,
+a.fourthWhite:active,
+a.borderWhite:hover,
+a.borderWhite:active,
+.bbs table .title a.under:hover,
+.bbs table .title a.under:active,
+.bbs table .color .title a.under:hover,
+.bbs table .color .title a.under:active {
+    color:#FFF;
+    background:#F09;
+}
+.sFriendSearch ul a.alive:link,
+.sFriendSearch ul a.alive:visited,
+.sFriendSearch ul a.alive:hover,
+.sFriendSearch ul a.alive:active {
+    color:#FFF;
+    background:#F09;
+}
+a.borderLesser:hover,
+a.borderLesser:active {
+	color:#666;
+}
+a.baseMain:link,
+a.baseMain:visited {
+	color:#333;
+}
+a.skill:link,
+a.skill:visited,
+a.skill:hover,
+a.skill:active {
+	color:#666;
+	border:0;
+}
+a.skill:hover,
+a.skill:active {
+	border:1px solid #F09;
+}
+a.lesserMain:link,
+a.lesserMain:visited {
+	color:#666;
+}
+a.thirdMain:link,
+a.thirdMain:visited {
+	color:#999;
+}
+a.baseMain:hover,
+a.baseMain:active,
+a.lesserMain:hover,
+a.lesserMain:active,
+a.thirdMain:hover,
+a.thirdMain:active  {
+	color:#F09;
+}
+a.spanColor:hover span {
+	color:#FFF;
+}
+a.imgBorder:link img,
+a.imgBorder:visited img,
+a.imgBorder:link canvas,
+a.imgBorder:visited canvas {
+    border:1px solid #BFBFBF;
+}
+a.imgBorder:hover img,
+a.imgBorder:active img,
+a.imgBorder:hover canvas,
+a.imgBorder:active canvas {
+    border:1px solid #F09;
+}
+a.imgBorder1:link,
+a.imgBorder1:visited {
+    border:1px solid #BFBFBF;
+}
+a.imgBorder1:hover,
+a.imgBorder1:active {
+    border:1px solid #F09;
+}
+a.imgBorder:hover,
+a.imgBorder1:hover {
+	_color:#334;
+}
+a.faceBorder:link img,
+a.faceBorder:visited img {
+    border:1px solid #FFF;
+}
+a.faceBorder:hover img,
+a.faceBorder:active img {
+    border:1px solid #F09;
+}
+a.borderMainOn:link,
+a.borderMainOn:visited {
+	border:1px solid #BFBFBF;
+}
+a.borderMainOn:hover,
+a.borderMainOn:active {
+	border:1px solid #F09;
+}
+/*A链接结束*/
+
+/*颜色开始*/
+.mainColor {
+    color:#F09;
+}
+.baseColor {
+    color:#333;
+}
+.lesserColor {
+    color:#666;
+}
+.thirdColor {
+    color:#999;
+}
+.fourthColor {
+    color:#0CF;
+}
+.fifthColor {
+    color:#9C3;
+}
+.borderColor {
+    color:#BFBFBF;
+}
+.elseColor {
+    color:#FFF;
+}
+.gary {
+    color:#CCC;
+}
+.red {
+    color:#F00;
+}
+.blue {
+	color:#00F;
+}
+.mainBgColor {
+	background-color:#F09;
+}
+/*颜色结束*/
+
+/*小图标开始*/
+.replyPicBg {/* 回复拐弯灰箭头 */
+	background:url(../../images/moaoyo/bgpic.gif) 0 -120px no-repeat;
+	width:20px;
+	height:20px;
+}
+.gArrow {/* 向右小粉箭头 */
+	background:url(../../images/moaoyo/bgpic.gif) -299px -180px no-repeat;
+	width:13px;
+	height:13px;
+}
+.gArrow_1 {/* 左旋转箭头 */
+	background:url(../../images/moaoyo/bgpic.gif) -200px 0px no-repeat;
+	width:7px;
+	height:8px;
+}
+.gArrow_2 {/* 右旋转箭头 */
+	background:url(../../images/moaoyo/bgpic.gif) -210px 0px no-repeat;
+	width:7px;
+	height:8px;
+}
+.pArrow_1 {/* 向下小粉实心三角 */
+	background:url(../../images/moaoyo/bgpic.gif) -50px -140px no-repeat;
+	width:11px;
+	height:6px;
+}
+.pArrow_2 {/* 向上小粉箭头 */
+	background:url(../../images/moaoyo/bgpic.gif) 0 -860px no-repeat;
+	width:13px;
+	height:11px;
+}
+.arrow_1 {/* 短信聊天向左灰三角 */
+	background:url(../../images/moaoyo/bgpic.gif) -300px -140px no-repeat;
+	width:19px;
+	height:18px;
+}
+.arrow_2 {/* 短信聊天向右粉三角 */
+	background:url(../../images/moaoyo/bgpic.gif) -350px -140px no-repeat;
+	width:19px;
+	height:18px;
+}
+.arrow_3 {/* 边框向上突出灰三角 */
+	background:url(../../images/moaoyo/bgpic.gif) 0 -200px no-repeat;
+	width:15px;
+	height:9px;
+}
+.arrow_4 {/* 边框向左突出灰三角黄色底 */
+	background:url(../../images/moaoyo/bgpic.gif) -150px -180px no-repeat;
+	width:9px;
+	height:15px;
+}
+.arrow_5 {/* 边框向左突出灰三角白底 */
+	background:url(../../images/moaoyo/bgpic.gif) -50px -200px no-repeat;
+	width:9px;
+	height:15px;
+}
+.arrow_6 {/* 边框向下突出灰三角白底 */
+	background:url(../../images/moaoyo/bgpic.gif) 0 -780px no-repeat;
+	width:12px;
+	height:7px;
+}
+a:link .openArrow,
+a:visited .openArrow {/* 向下打开层箭头 */
+	background:url(../../images/moaoyo/bgpic.gif) -150px -1430px no-repeat;
+	width:12px;
+	height:12px;
+}
+a:hover .openArrow,
+a:active .openArrow {/* 向下打开层箭头 */
+	background:url(../../images/moaoyo/bgpic.gif) -100px -1430px no-repeat;
+	width:12px;
+	height:12px;
+}
+.nMsg {/* 新短信图标 */
+	background:url(../../images/moaoyo/bgpic.gif) 0 -800px no-repeat;
+	width:36px;
+	height:33px;
+}
+.sIdPhotoOn {/* 通过身份验证小图标 */
+	background:url(../../images/moaoyo/bgpic.gif) -400px -418px no-repeat;
+	width:15px;
+	height:12px;
+}
+.mip_1 {/* 有MIP的小图标 */
+	background:url(../../images/moaoyo/bgpic.gif) -100px -140px no-repeat;
+	width:23px;
+	height:9px;
+}
+.sDel_1 {/* 白色小差 */
+	background:url(../../images/moaoyo/bgpic.gif) -200px -100px no-repeat;
+	width:5px;
+	height:6px;
+}
+.sDel_2 {/* 垃圾桶图标 */
+	background:url(../../images/moaoyo/bgpic.gif) -150px -100px no-repeat;
+	width:10px;
+	height:10px;
+}
+.sDel_3 {/* 黑色小差 */
+	background:url(../../images/moaoyo/bgpic.gif) -200px -140px no-repeat;
+	width:5px;
+	height:6px;
+}
+.audition {/* 试听图标 */
+	background:url(../../images/moaoyo/bgpic.gif) -238px -98px no-repeat;
+	width:14px;
+	height:12px;
+}
+.showUp_1 {/* MOKO!首页推荐 */
+	background:url(../../images/moaoyo/bgpic.gif) -100px -200px no-repeat;
+	width:110px;
+	height:37px;
+}
+.showUp_2 {/* MOKO!展示推荐 */
+	background:url(../../images/moaoyo/bgpic.gif) -100px -250px no-repeat;
+	width:110px;
+	height:37px;	
+}
+.showUp_3 {/* MOKO!首页自拍 */
+	background:url(../../images/moaoyo/bgpic.gif) -240px -200px no-repeat;
+	width:110px;
+	height:37px;	
+}
+.addMF_1 {/* 增加美分50 */
+	background:url(../../images/moaoyo/bgpic.gif) -100px -300px no-repeat;
+	width:110px;
+	height:37px;
+}
+.addMF_2 {/* 增加美分100 */
+	background:url(../../images/moaoyo/bgpic.gif) -240px -300px no-repeat;
+	width:110px;
+	height:37px;
+}
+.addMF_3 {/* 增加美分150 */
+	background:url(../../images/moaoyo/bgpic.gif) -400px -300px no-repeat;
+	width:110px;
+	height:37px;
+}
+a:hover .audition {
+	background:url(../../images/moaoyo/bgpic.gif) -218px -98px no-repeat;
+}
+img.down {/* 下载提示图标 */
+	background:url(../../images/moaoyo/bgpic.gif) -238px -138px no-repeat;
+	width:14px;
+	height:12px;
+}
+a:hover .down {
+	background:url(../../images/moaoyo/bgpic.gif) -218px -138px no-repeat;
+}
+a.pointPic { /* 独立的点击量图标 */
+	display:block;
+	padding:0 8px 0 18px;
+	height:15px;
+	background:url(../../images/moaoyo/bgpic.gif) 0 -339px no-repeat;
+}
+a.replyPic { /* 独立评论数图标 */
+	display:block;
+	padding:0 8px 0 18px;
+	height:15px;
+	background:url(../../images/moaoyo/bgpic.gif) 0 -298px no-repeat;
+}
+.authentication { /* MOKO!认证 */
+	background:url(../../images/moaoyo/bgpic.gif) -50px -100px no-repeat;
+	width:13px;
+	height:13px;
+}
+.error { /* 错误! */
+	background:url(../../images/moaoyo/bgpic.gif) -50px -600px no-repeat;
+	width:16px;
+	height:15px;
+}
+.correct { /* 正确! */
+	background:url(../../images/moaoyo/bgpic.gif) 0 -1100px no-repeat;
+	width:19px;
+	height:15px;
+}
+
+
+/*小图标结束*/
+
+/*cursor style start*/
+.curBig {
+	cursor:url(../../images/moaoyo/big.cur), auto;
+}
+.curSmall {
+	cursor:url(../../images/moaoyo/small.cur), auto;
+}
+/*cursor style end*/
+
+
+/*在线状态开始*/
+.online,
+.offline {
+	background:url(../../images/moaoyo/bgpic.gif) 0 -240px no-repeat;
+	width:23px;
+	height:19px;
+	cursor:default;
+}
+.offline {
+	background-position:0 -260px;
+}
+.online1,
+.offline1 {
+	background:url(../../images/moaoyo/bgpic.gif) 4px -414px no-repeat;
+	width:83px;
+	height:87px;
+	cursor:default;
+}
+.offline1 {
+	background-position:4px -505px;
+}
+/*在线状态结束*/
+
+/*等级开始*/
+.vip {
+	background:url(../../images/moaoyo/bgpic.gif) 0 -400px no-repeat;
+	width:26px;
+	height:10px;
+	cursor:default;
+}
+/*等级结束*/
+
+/*头部开始*/
+.head .logoNav .logo {
+	background:url(../../images/moaoyo/logo.gif) 0 -100px no-repeat;
+	width:148px;
+	height:30px;
+	text-indent:-9999px;
+}
+.head .newMsg li a span {
+	color:#666;
+}
+/*头部结束*/
+
+/*左侧导航结束*/
+.help .leftNav li a:link,
+.help .leftNav li a:visited,
+.mokoMember .leftNav li a:link,
+.mokoMember .leftNav li a:visited {
+	color:#666;
+	border:1px solid #DDD;
+}
+.leftNav li a:hover,
+.leftNav li a:active,
+.help .leftNav li a:hover,
+.help .leftNav li a:active,
+.mokoMember .leftNav li a:hover,
+.mokoMember .leftNav li a:active {
+	border:1px solid #F09;
+}
+.leftNav li.alive a:link,
+.leftNav li.alive a:visited,
+.leftNav li.alive a:hover,
+.leftNav li.alive a:active {
+	color:#F09;
+	border:1px solid #F09;
+}
+.leftNav li.alive .bg {
+	background:url(../../images/moaoyo/bgpic.gif) 0 -140px no-repeat;
+	width:11px;
+	height:20px;
+}
+/*左侧导航结束*/
+
+/*选项卡开始*/
+.tab a.borderOn:link,
+.tab a.borderOn:visited,
+.tab a.borderOn:hover,
+.tab a.borderOn:active,
+.tab a.mainBorderOn:link,
+.tab a.mainBorderOn:visited,
+.tab a.mainBorderOn:hover,
+.tab a.mainBorderOn:active {
+	color:#F09;
+}
+.tab .tabNav a:hover,
+.tab .tabNav a:active {
+	border:1px solid #F09;
+}
+.tab .tabNav .alive a:link,
+.tab .tabNav .alive a:visited,
+.tab .tabNav .alive a:hover,
+.tab .tabNav .alive a:active {
+	color:#F09;
+	border:1px solid #BFBFBF;
+	background-color:#FFF;
+}
+.tab .tabNav a:link,
+.tab .tabNav a:visited,
+.tab .tabNav a:hover,
+.tab .tabNav a:active {
+	color:#999;
+}
+.tab .upNav li.borderOn {
+	border-bottom-color:#FFF;
+}
+.tab .upNav .pic,
+.tab .upNav .order,
+.tab .upNav .flash {
+	background:url(../../images/moaoyo/uppic.gif) 0 -95px no-repeat;
+	width:122px;
+	height:31px;
+}
+.tab .upNav .order {
+	background-position:0 -150px;
+}
+.tab .upNav .flash {
+	background-position:0 -195px;
+}
+/*选项卡结束*/
+
+/*上传开始*/
+.uping .borderOn .bg {
+	background-color:#F09;
+}
+.orderPicBox li {
+	border:1px solid #BFBFBF;
+}
+.orderPicBox li.alive {
+	border:1px solid #F09;
+}
+.publish .control {
+	background-color:#FFF;
+}
+/*上传结束*/
+
+/*首页标题背景开始*/
+.mokoShows h6,
+.mokoMip h6,
+.mokoUsers h6,
+.bbs h6 {
+	background:url(../../images/moaoyo/index.gif) 415px -50px no-repeat;
+}
+.mokoShows .moko {
+	background:url(../../images/moaoyo/index.gif) 420px -350px no-repeat;
+}
+.mokoShows .moko1 {
+	background:url(../../images/moaoyo/index.gif) 425px -450px no-repeat;
+}
+.mokoShows .moko2 {
+	background:url(../../images/moaoyo/index.gif) 425px -50px no-repeat;
+}
+.mokoUsers .moko3 {
+	background:url(../../images/moaoyo/index.gif) 415px -100px no-repeat;
+}
+.mokoShows .moko4 {
+	background:url(../../images/moaoyo/index.gif) 410px -550px no-repeat;
+}
+.mokoShows .moko5 {
+	background:url(../../images/moaoyo/index.gif) 420px -600px no-repeat;
+}
+.mokoShows .moko7 {
+	background:url(../../images/moaoyo/index.gif) 400px -730px no-repeat;
+}
+.mokoShows .moko8 {
+	background:url(../../images/moaoyo/index.gif) 440px -760px no-repeat;
+}
+.mokoShows .item {
+	background:url(../../images/moaoyo/index.gif) 415px -500px no-repeat;
+}
+.mokoShows .item {
+	background:url(../../images/moaoyo/index.gif) 415px -500px no-repeat;
+}
+.mokoShows .moko9 {
+	background:url(../../images/moaoyo/index.gif) 400px -800px no-repeat;
+}
+.bigShow h6 {
+	background:url(../../images/moaoyo/index.gif) 420px -840px no-repeat;
+}
+.mokoMip h6 {
+	background:url(../../images/moaoyo/index.gif) 430px -100px no-repeat;
+}
+.joinList h6,
+.justiceList h6 {
+	background:url(../../images/moaoyo/index.gif) -10px -150px no-repeat;
+}
+.justiceList h6 {
+	background:url(../../images/moaoyo/index.gif) 10px -200px no-repeat;
+}
+.mokoMip h6 {
+	background:url(../../images/moaoyo/index.gif) -10px -300px no-repeat;
+}
+.bbs h6 {
+	background:url(../../images/moaoyo/index.gif) 10px 0 no-repeat;
+}
+.bbs .l .mainBorderOn .bg {
+	background:url(../../images/moaoyo/index.gif) 0 -250px no-repeat;
+}
+.mokoShows h5.mvp {
+	background:url(../../images/moaoyo/index1.gif) -15px 0px no-repeat;
+}
+.mokoShows h5.mp {
+	background:url(../../images/moaoyo/index1.gif) -15px -50px no-repeat;
+}
+/*首页标题背景结束*/
+
+/*展示开始*/
+a.coverBg:link,
+a.coverBg:visited {
+	background-color:#FFF;
+}
+a.coverBg:hover,
+a.coverBg:active {
+	color:#FFF;
+	background-color:#F09;
+}
+/*展示结束*/
+
+/*职业分类开始*/
+.userSkill li.alive a:link,
+.userSkill li.alive a:visited,
+.userSkill li.alive a:hover,
+.userSkill li.alive a:active,
+.userSkill li.alive span,
+.userSkill li.alive span,
+.userSkill li.alive span,
+.userSkill li.alive span {
+	color:#F09;
+}
+.userList div.r ul li a:link span,
+.userList div.r ul li a:visited span {
+	color:#F09;
+}
+.userList div.r ul li a:hover span,
+.userList div.r ul li a:active span {
+	color:#FFF;
+}
+/*职业分类结束*/
+
+/*BBS开始*/
+.bbs img.title {
+	background:url(../../images/moaoyo/bgpic.gif) 15px -986px no-repeat;
+	width:957px;
+	height:40px;
+}
+.bbs .topBg {
+	background:url(../../images/moaoyo/bgpic.gif) 0 -40px no-repeat;
+	width:21px;
+	height:23px;
+}
+.bbs .hotBg {
+	background:url(../../images/moaoyo/bgpic.gif) 0 -880px no-repeat;
+	width:29px;
+	height:28px;
+}
+.bbs .hot .hotBg,
+.bbs .hotOn {
+	background:url(../../images/moaoyo/bgpic.gif) 0 -920px no-repeat;
+	width:29px;
+	height:28px;
+}
+.bbs .excellentBg {
+	background:url(../../images/moaoyo/bgpic.gif) 0 -960px no-repeat;
+	width:31px;
+	height:22px;
+}
+.bbs .excellent .excellentBg {
+	background:url(../../images/moaoyo/bgpic.gif) 0 -1040px no-repeat;
+	width:56px;
+	height:38px;
+}
+.bbs .replyBg {
+	background:url(../../moaoyo/bgpic.gif) 0 -80px no-repeat;
+	width:28px;
+	height:22px;
+}
+.publish img.title,
+.edit img.title,
+.highReply img.title {
+	background:url(../../images/moaoyo/bbs.gif) 0 0 no-repeat;
+	width:95px;
+	height:25px;
+}
+.edit img.title {
+	background-position:0 -50px;
+}
+.highReply img.title {
+	background-position:0 -100px;
+}
+.edit p img.bg,
+.edit p img.mainColorBg {
+	background-color:#000;
+	width:20px;
+	height:20px;
+}
+.edit p img.mainColorBg {
+	background-color:#F09;
+}
+.edit p.color input {
+	position:relative;
+	margin-top:4px;
+	+margin-top:0;
+}
+/*BBS结束*/
+
+/**************************************************分页开始******************************************************/
+.pagination a:hover,
+.pagination a:active {
+	border:1px solid #F09;
+}
+.pagination a.alive:link, 
+.pagination a.alive:visited,
+.pagination a.alive:hover,
+.pagination a.alive:active {
+	color:#FFF;
+	background-color:#F09;
+}
+/**************************************************分页结束******************************************************/
+
+/*其他*/
+.close {
+	display:block;
+	background:url(../../images/moaoyo/bgpic.gif) 0 -600px no-repeat;
+	width:16px;
+	height:15px;
+}
+.message li .bg {
+	background:url(../../images/moaoyo/bgpic.gif) 0 -800px no-repeat;
+	width:37px;
+	height:33px;
+}
+.sIdCard {
+	background:url(../../images/moaoyo/bgpic.gif) -400px -418px no-repeat;
+	width:15px;
+	height:12px;
+}
+.re .reBg {
+	background:url(../../../images/moaoyo/moaoyo/bgpic.gif) 0 -120px no-repeat;
+	width:20px;
+	height:20px;
+}
+.pswStrong1 .weak {
+	background-color:#F00;
+}
+.pswStrong2 span {
+	background-color:#FF0;
+}
+.pswStrong2 .strong {
+	background-color:#FFF;
+}
+.pswStrong3 span {
+	background-color:#0F0;
+}
+
+/*登录页面开始*/
+.logoin .borderOn p input {
+	border:2px solid #BFBFBF;
+}
+.logoin .borderOn p input.alive {
+	border:2px solid #F09;
+}
+/*登录页面结束*/
+
+

@@ -1,0 +1,6 @@
+[
+{'provinceID':'110000','province':'北京市'},
+{'provinceID':'120000','province':'天津市'},
+{'provinceID':'130000','province':'河北省'},
+{'provinceID':'310000','province':'上海市'}
+]

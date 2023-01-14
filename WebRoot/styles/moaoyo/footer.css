@@ -1,0 +1,27 @@
+﻿@charset "utf-8"; 
+
+/**** footer begin ****/
+html{-webkit-text-size-adjust:none;} /*支持chrome 小字体*/
+section, article, aside, header, footer, nav, dialog, figure {display: block;} /*让老本的浏览器支持语义化标签*/
+.footer { margin: 0px auto; padding-top:50px; width:959px; clear:both;}
+.footer .cf{ overflow:hidden; zoom:1;}
+.footer .sitemap { margin-bottom:20px; overflow: hidden; zoom:1;}
+.footer .sitemap ul { margin:0; padding:15px 10px 15px 100px;}
+.footer .sitemap ul li { float:left; width:162px; font-size:12px; line-height:16px;}
+.footer .sitemap ul li a { font-size:12px;}
+.footer .sitemap ul.title{ border-bottom:#DEDEDE solid 1px; color:#f09; height:19px;}
+.footer .sitemap ul.title li {padding-left:3px; width:160px; font-weight:700;}
+.footer .copy { padding:30px 0px 20px 0px; height:28px; font-size:10px; text-align:right; background:url(../../images/moaoyo/copy_right.jpg) 0px 5px no-repeat; border-top: 1px dashed #DEDEDE; color:#ccc;}
+.footer .copy span{font-size:10px;}
+.footer .copy a{ color:#ccc;}
+.footer .copy a:hover{color:#f09;}
+
+.footer .FB{ height:48px; line-height:48px; color:#999; font-size:12px; border-top:#bbb solid 1px; text-align:center;}
+.footer .FB p{ width:777px; margin:0px auto; background:url(../../images/moaoyo/FB_bg.jpg) 0px 7px no-repeat; padding-left:40px;}
+.footer .FB span{ font-weight:bold; font-size:14px;}
+
+/*底部 hot start*/
+.bottom-hot{ position:relative; z-index:2;  }
+.bottom-hot img{ position:absolute; top:0px; left:60px; background:url(../../images/moaoyo/bottom_ongoing_icon.gif) no-repeat; width:34px; height:13px;}
+/*底部 hot end*/
+/**** footer end ****/

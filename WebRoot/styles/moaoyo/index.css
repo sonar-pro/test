@@ -1,0 +1,343 @@
+@charset "utf-8";
+	h2,h3 {
+	position:relative;
+	padding:15px;
+	text-indent:-9999em;
+	text-transform:uppercase;
+}
+h3 {
+	text-indent:0;
+	font-weight:700;
+}
+h2 .more {
+	position:absolute;
+	top:15px;
+	right:15px;
+	height:17px;
+	font-size:14px;
+	text-indent:0;
+}
+.iBd:link img,.iBd:visited img {
+	border-color:#DDD;
+}
+.iBd:hover img,.iBd:active img {
+	border-color:#BBB;
+}
+.iRoad {
+	padding:20px;
+}
+.iRoad a {
+	font-size:16px;
+	font-weight:700;
+}
+
+.indexTab {
+	margin-bottom:-14px;
+}
+.mokoNews {
+	float:right;
+	width:474px;
+	height:254px;
+}
+.mokoNews .show {
+	padding:0 5px 0 10px;
+	text-align:center;
+}
+.mokoNews .show .cover {
+	margin-bottom:6px;
+}
+.mokoNews .show .info {
+	padding-left:0;
+}
+.mokoNews .show .info a {
+	font-size:14px;
+	font-weight:400;
+}
+.mokoNews .newsList {
+	float:right;
+	width:305px;
+}
+.mokoNews .newsList li {
+	padding:3px 0 4px 10px;
+}
+.sBox {
+	padding:2px 0 10px 0;
+}
+.sBox .mokoMsp .mspInfo {
+	top:20px;
+	left:265px;
+}
+.sBox .small {
+	margin-bottom:10px;
+}
+.sBox .page {
+	padding:10px 20px;
+}
+.big,.slide {
+	margin-left:5px;
+}
+.big .show,.slide .show {
+	margin-left:5px;
+}
+.slide {
+	position:relative;
+}
+.slide #conBox {
+	height:321px;
+	overflow:hidden;
+}
+.slide .arrow13,.slide .arrow14 {
+	position:absolute;
+	top:0;
+	left:-35px;
+}
+.slide .arrow13 {
+	position:absolute;
+	left:auto;
+	right:-35px;
+}
+.iList {
+	position:relative;
+	z-index:2;
+}
+.iList .more {
+	position:absolute;
+	right:15px;
+	bottom:15px;
+	font-size:12px;
+}
+.iList .iCheck {
+	_position:relative;
+	padding:10px;
+	border-width:0 0 1px;
+}
+.iList .iCheck .selectBox {
+	float:left;
+	_display:inline;
+	margin:0 5px 0 10px;
+}
+.iList .iCheck .selectBox .bd {
+	border-color:#DDD;
+}
+.iList .iCheck a.button {
+	float:left;
+	_position:absolute;
+	_float:none;
+	top:10px;
+	right:20px;
+	margin-left:10px;
+	width:210px;
+	height:45px;
+	font-size:0;
+	-webkit-text-size-adjust:none;
+	text-indent:-9999px;
+}
+.iList .iQLink {
+	padding:10px;
+}
+.iList .iQLink li {
+	float:left;
+	padding:5px 0 5px 33px;
+	width:435px;
+	font-size:12px;
+}
+.iList .iQLink li a {
+	padding-right:10px;
+}
+.iList .iQLink li span {
+	font-size:14px;
+	font-weight:700;
+}
+.selectBox .iAddress {
+	margin-top:-1px;
+	border-width:1px 0 0;
+	width:169%;
+}
+.hAd {
+	display:inline-block;
+	width:474px;
+	height:254px;
+}
+.tAd {
+	position:relative;
+}
+.tAd img {
+	display:inline-block;
+	width:957px;
+}
+.sAd .sAd_s {
+	display:inline-block;
+	width:234px;
+	height:254px;
+}
+.sAd .sAd_b {
+	display:inline-block;
+	margin-left:5px;
+	width:716px;
+	height:254px;
+}
+.cyberpolice {
+	padding-bottom:10px;
+	text-align:right;
+}
+.nShow h1 {
+	padding:10px 15px;
+	font-size:36px;
+}
+.nShow .list {
+	position:absolute;
+	top:75px;
+	left:25px;
+}
+.nShow .list li a {
+	font-size:24px;
+}
+.nShow .sBox {
+	padding-left:150px;
+}
+.nShow .sBox h2 .more {
+	top:8px;
+	height:27px;
+	font-size:18px;
+}
+.footer {
+	padding-top:200px;
+}
+.uPush {padding-top:2px;}
+.mokoNews h2,.sBox h2,.uPush h2,.footer {
+	background:url("../../images/moaoyo/index.jpg?d=20110825") no-repeat scroll 9999px 0 transparent;
+}
+.nShow .footer {
+	padding-top:50px;
+	background:none;
+}
+.mokoNews h2 {
+	background-position:15px -1000px;
+}
+.mokoNews .newsList li {
+	background:url("../../images/moaoyo/bg.jpg?d=20110503") no-repeat scroll -396px -599px transparent;
+}
+.sBox .handpick {
+	background-position:15px -145px;
+}
+.uPush .mokoStar {
+	background-position:73% -195px;
+}
+.sBox .syIndustry {
+	background-position:15px -245px;
+}
+.sBox .mtIndustry {
+	background-position:15px -295px;
+}
+.sBox .mokoMsp {
+	background-position:15px -1145px;
+}
+.sBox .ysIndustry {
+	background-position:15px -345px;
+}
+.sBox .nFace {
+	background-position:15px -395px;
+}
+.sBox .yyIndustry {
+	background-position:15px -445px;
+}
+.sBox .sjIndustry {
+	background-position:15px -495px;
+}
+.sBox .dyIndustry {
+	background-position:15px -545px;
+}
+.sBox .ggIndustry {
+	background-position:15px -595px;
+}
+.sBox .musicIndustry {
+	background-position:15px -645px;
+}
+.sBox .elseIndustry {
+	background-position:15px -695px;
+}
+.uPush .newMokoer {
+	background-position:73% -745px;
+}
+.uPush .newCp {
+	background-position:73% -1048px;
+}
+.sBox .jobOpportunity {
+	background-position:73% -1100px;
+}
+.sBox .sevenHot {
+	background-position:15px -795px;
+}
+.sBox .selfPhoto {
+	background-position:15px -845px;
+}
+.sBox .MVPShow {
+	background-position:15px -895px;
+}
+.sBox .VIPShow {
+	background-position:15px -945px;
+}
+.footer {background-position:center -1280px;}
+
+
+/*首页精选*/
+.home-select {padding:20px 0px;font-size:36px;}
+
+/* MOKO!行业明星推荐 begin */
+.index-moko-star{ margin:0px -16px 5px 10px; position:relative; /*控制首页左边距*/ padding: 2px 0 10px 0; font-family:"微软雅黑",Verdana,"宋体",sans-serif; _zoom:1; overflow:hidden;}
+.index-moko-star h1{ font-size:24px; color:#666; margin-bottom:8px; padding-left:4px; }
+.index-moko-star .star-box{ float:left; width:132px; margin:0 6px 16px 0;}
+.index-moko-star .star-icon{ height:147px;}
+.index-moko-star .star-icon a{ position:relative; border:#dedede solid 1px; display:inline-block; color:#ccc;}
+.index-moko-star .star-icon a:hover{ border-color:#bbb;}
+.index-moko-star .star-icon a .moko-star-icon{ width:130px; height:140px;}
+.index-moko-star .star-icon a .moko-start-label{ position:absolute; bottom:-10px; left:-1px; height:30px; background-image:url(../../images/moaoyo/moko_star_label.png); _background-image:url(../../images/moaoyo/moko_star_label.gif); background-repeat:no-repeat; width:132px; visibility:hidden;}
+.index-moko-star .star-icon a:hover .moko-start-label{ visibility:visible;}
+.index-moko-star .star-name{ margin-top:6px;}
+.index-moko-star .star-name a{ color:#666; font-size:24px; text-decoration:none;}
+.index-moko-star .star-name a:hover{ text-decoration:underline;}
+.index-moko-star .more{	margin-right:30px; float:right; margin-top:10px; color:#666; text-decoration:underline; font-size:14px;}
+.index-moko-star .more:hover{ color:#f09;}
+
+.vocation-1{ background-position:0px 0px;}
+.vocation-13{ background-position:0px -30px;}
+.vocation-23{ background-position:0px -60px;}
+.vocation-28{ background-position:0px -90px;}
+.vocation-41{ background-position:0px -120px;}
+.vocation-53{ background-position:0px -150px;}
+.vocation-71{ background-position:0px -180px;}
+.vocation-94{ background-position:0px -210px;}
+.vocation-143{ background-position:0px -240px;}
+/* MOKO!行业明星推荐 end */
+
+/* 首页MOKO展示推荐 */
+.sBox h1{ font-size:24px; color:#666666; margin-bottom:8px; padding-left:9px; font-family:"微软雅黑",Verdana,"宋体",sans-serif; margin-top:10px; }
+.sBox h1 .more{margin-right:14px; float:right; margin-top:10px; color:#666; text-decoration:underline; font-size:14px;}
+.sBox h1 .more:hover{ color:#f09;}
+
+
+/* 首页底部广告 begin */
+.index-ad3{ margin-left:10px; overflow:hidden;}
+.index-ad3 a{ overflow:hidden; display:inline-block;}
+/* 首页底部广告 end */
+
+/*** 首页新导航 begin ***/
+.industry { padding:5px 0 10px 0; float:right; overflow:hidden;}
+.industry a{ background:url(../../images/moaoyo/iNav.gif) no-repeat; display:inline-block; width:61px; height:42px; margin:0 0 6px 10px; overflow:hidden; text-indent:-9999px; float:left;}
+.industry .i_28 {	background-position:0 0;}
+.industry .i_23 {	background-position:-69px 0;}
+.industry .i_41 {	background-position:-139px 0;}
+.industry .i_143 {	background-position:-208px 0;}
+.industry .i_13 {	background-position:-277px 0;}
+.industry .i_1 {	background-position:-347px 0;}
+.industry .i_53 {	background-position:-415px 0;}
+.industry .i_71 {	background-position:-484px 0;}
+.industry .i_94 {	background-position:-554px 0;}
+.industry a.active{ height:48px; margin-bottom:0;}
+.industry a:hover{opacity: 0.7; filter: alpha(opacity=70);}
+.industry a.active:hover{opacity: 1; filter: alpha(opacity=100);}
+/*** 首页新导航 end ***/
+
+/*** 首页顶部广告位 begin ***/
+.about-moko{ margin:0 0 8px 10px; clear:both; overflow:hidden;}
+/*** 首页顶部广告位 end ***/

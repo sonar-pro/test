@@ -1,0 +1,15 @@
+设为首页代码：
+
+代码一：<span onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.yantaseo.com.cn');"  style="CURSOR: hand">将本站设置为首页</a></span></p>
+<p><br>
+
+代码二：<a title="设置本站为浏览器首页" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.yantaiseo.com.cn');" href="javascript:;">设为首页</a>
+
+添加到收藏夹或者设置成我的最爱：
+
+代码一：<a onclick="window.external.AddFavorite(location.href, document.title);" title="网站优化" style="cursor:hand">收藏本页</a> </p>
+<p><br>
+
+代码二：<a href="javascript:window.external.AddFavorite('http://www.yantaiseo.com.cn', '烟台seo')">收藏本站</a>
+
+ 

@@ -1,0 +1,7 @@
+﻿@charset "utf-8";.aEmail{padding:15px;text-align:center;}.uPush h2{margin-bottom:10px;padding:10px;font-size:14px;font-weight:700;border-bottom:1px solid #BBB;}.page{margin-top:20px;}.rAd{display:inline-block;margin:0 0 5px 5px;width:195px;}.sBox_1 .mokoMsp{position:relative;margin-bottom:50px;padding:0;height:60px;text-indent:-9999em;text-transform:uppercase;}.sBox_1 .mokoMsp .mspInfo{position:absolute;top:60px;left:10px;text-indent:0;}.sBox_1 .mokoMsp .more{position:absolute;top:60px;right:10px;margin:0;font-size:14px;text-indent:0;}
+/* my moko页面选择职业 */
+.reg-su-tip{ text-align:center; background:#FFFF00; line-height:47px; font-family:"微软雅黑"; font-size:18px;}
+
+/* my moko页面最新推荐 */
+.newest-box{margin-bottom: 5px; margin-left: 10px; border: 1px solid #BBB; padding:2px 0px 20px 0px; clear:both; overflow:hidden; zoom:1;}
+.newest-recommend{ background:url(../images/newest_recommend.jpg) 10px 13px no-repeat; height:45px;}

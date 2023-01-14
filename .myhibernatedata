@@ -1,0 +1,22 @@
+#
+#Wed Mar 18 11:30:37 CST 2009
+genBasicCompId=false
+sessionFactoryName=com.xingye.HibernateSessionFactory
+profile=
+daoSFId=
+version=3.0
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+libInstallFolder=/WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=sessionFactory
+basePersistenceClass=
+reSettingsFile=/billsystem/hibernate.reveng.xml
+configFile=/billsystem/WebRoot/WEB-INF/applicationContext.xml
+createConfigFile=false
+addLibs2Classpath=true

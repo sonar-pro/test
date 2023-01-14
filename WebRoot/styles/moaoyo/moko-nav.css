@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.moko-nav {font: 14px/1.431 "微软雅黑",Verdana,"宋体",sans-serif; color:#666; background:url(../../images/moaoyo/nav_bg.jpg) repeat-x; height:39px; min-width:979px; position:relative; z-index:2;}
+.moko-nav .moko-nav-width{ min-width:992px; max-width:1600px; margin:0px auto; }
+.moko-nav .left-nav,.moko-nav .right-nav{white-space:nowrap; height:39px; font: 14px/1.431 "微软雅黑",Verdana,"宋体",sans-serif; line-height:39px;}
+.moko-nav .left-nav{ float:left; padding-left:25px; margin-left:10px; background:url(../../images/moaoyo/nav_logo.jpg) no-repeat 0 center;}
+.moko-nav ul{ list-style:none; margin:0px; padding:0px;}
+.moko-nav ul li{ float:left;}
+.moko-nav .right-nav{ float:right; margin-right:10px;  }
+.moko-nav a{ color:#666; padding:0px 8px; font: 14px/1.431 "微软雅黑",Verdana,"宋体",sans-serif; zoom:1; line-height:39px;}
+.moko-nav a:hover , .moko-nav a.active{ color:#f09; }
+.moko-nav .other-login{ padding-left:10px;}
+.moko-nav li.sina a,.moko-nav li.qq a{ background:url(../../images/moaoyo/other_mini_icon.jpg) no-repeat 0 center; width:24px; display:block; padding:0; margin:0 4px;}
+.moko-nav li.qq a{ background-position:-24px center;}
+.moko-nav .new,.moko-nav .hot{ position:relative; z-index:2;  }
+.moko-nav .new img{ position:absolute; top:20px; left:40%; background:url(../../images/moaoyo/nav_new_icon.gif) 0px 5px no-repeat; width:54px; height:25px; }
+.moko-nav .hot img{ position:absolute; top:0; right:0; background:url(../../images/moaoyo/nav_hot_icon.gif?20111201) no-repeat; width:15px; height:13px;}
