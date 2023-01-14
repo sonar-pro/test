@@ -74,7 +74,7 @@ sonarqube-check:
   script:
 #    - sonar-scanner -D sonar.projectKey=test -D sonar.host.url=http://localhost:9000 -D sonar.       login=8f1b26481a6e365ea861c77f3097575d612b1094
 #    - sonar-scanner.bat -D"sonar.projectKey=test" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=sqp_7d54fcd16f1cd3e94a2d1f984fcd27a22c8169bb"    
-    - sonar-scanner.bat -D"sonar.projectKey=test" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=admin"  -D"sonar.password=sonar"
+    - sonar-scanner.bat -D"sonar.projectKey=test" -D"sonar.sources=." -D"sonar.host.url=http://192.168.3.200:9000" -D"sonar.login=admin"  -D"sonar.password=sonar"
   allow_failure: true
   only:
     - merge_requests
