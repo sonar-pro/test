@@ -16,9 +16,13 @@ pipeline {
         stage('code checking') {
             steps {
                 script {
+                    //引入SonarqubeScanner工具
+                    //sonarqube-scanner为在jenkins中定义的工具名称
                     scannerHome = tool 'MyScanner'
                 }
+	      //引入SonarQube服务器环境，MySonarQube为我们为环境起的名称
                 withSonarQubeEnv('MySonarQube') {
+		 //sonarqube-scanner工具下的脚本
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
             }
