@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pull code') {
             steps {
-                // TODO 这里需要等等使用Pipeline构建器生成 记得删除此行
+                // TODO 这里需要等等使用Pipeline构建器生成 记得删除此行 
 	            checkout scmGit(branches: [[name: '*/master']], browser: gitLab(repoUrl: 'https://gitlab.com/sonar-users/test.git', version: '15.6'), extensions: [], userRemoteConfigs: [[credentialsId: '7e24d4d2-cd57-4620-8517-a9d141bd16a5', url: 'https://gitlab.com/sonar-users/test.git']])
             }
         }
