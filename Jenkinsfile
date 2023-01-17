@@ -23,7 +23,8 @@ pipeline {
 	            //引入SonarQube服务器环境，MySonarQube为我们为环境起的名称
                 withSonarQubeEnv('Sonarqube') {
 		            //sonarqube-scanner工具下的脚本
-                    sh "${scannerHome}/bin/sonar-scanner"
+                    //sh "${scannerHome}/bin/sonar-scanner"
+                    bat "${scannerHome}/bin/sonar-scanner"
                 }
             }
         }
